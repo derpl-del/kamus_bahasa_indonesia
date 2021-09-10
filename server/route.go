@@ -15,7 +15,7 @@ func NewRoute(r *chi.Mux) *chi.Mux {
 		GraphiQL: true,
 	})
 	r.Use(middleware.Logger)
-	r.Handle("/query", graphQL)
+	r.Handle("/", graphQL)
 	r.Get("/api/arti/{kata}", words.RestApiGetWords)
 	return r
 }
