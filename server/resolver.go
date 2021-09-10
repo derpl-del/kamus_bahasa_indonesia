@@ -17,7 +17,7 @@ var queryType = graphql.NewObject(
 	graphql.ObjectConfig{
 		Name: "Query",
 		Fields: graphql.Fields{
-			"arti": words.Word_query,
+			"penjelasan": words.Word_query,
 		},
 	},
 )

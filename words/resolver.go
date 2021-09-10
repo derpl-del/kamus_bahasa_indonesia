@@ -8,11 +8,11 @@ var WordType = graphql.NewObject(
 	graphql.ObjectConfig{
 		Name: "Kata",
 		Fields: graphql.Fields{
-			"kata": &graphql.Field{
-				Type: graphql.String,
-			},
 			"arti": &graphql.Field{
 				Type: graphql.NewList(graphql.String),
+			},
+			"kata": &graphql.Field{
+				Type: graphql.String,
 			},
 		},
 	},
