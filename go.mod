@@ -1,6 +1,7 @@
 module kamus_api
 
-go 1.16
+// +heroku goVersion go1.14
+go 1.14
 
 require (
 	github.com/PuerkitoBio/goquery v1.7.1
