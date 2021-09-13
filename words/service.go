@@ -16,5 +16,4 @@ func RestApiGetWords(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	HttpResponseError(w, r, words, 404)
-	return
 }

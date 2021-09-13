@@ -31,7 +31,7 @@ func GetWordKbbi(word string) Words {
 		row = append(row, sel.Text())
 	})
 	for x := 0; x <= len(row)-4; x++ {
-		resp = append(resp, strings.Split(row[x], "    ")[len(strings.Split(row[x], "    "))-1])
+		resp = append(resp, strings.TrimSpace(strings.Split(row[x], "    ")[len(strings.Split(row[x], "    "))-1]))
 	}
 	return Words{Kata: word, Arti: resp}
 }
