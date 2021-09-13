@@ -9,7 +9,7 @@ https://kbbi-graphql.herokuapp.com/
 ```
 ### Request
 ```graphql
-query{arti(kata:"malam")
+query{penjelasan(kata:"malam")
   {
     kata
     arti
@@ -32,7 +32,7 @@ query{arti(kata:"malam")
 }
 ```
 
-## RestApi Example
+## RestApi
 ### Endpoint
 ```
 https://kbbi-graphql.herokuapp.com/api/arti/{kata}
